@@ -1,0 +1,11 @@
+.box {width:200px;height:120px;background:#4b274e;}
+.box:hover {animation:box_ani_01 2s infinite alternate;}
+
+@keyframes box_ani_01 {
+    0% {
+        width:200px;
+    }
+    100% {
+        width:400px;
+    }
+}
