@@ -11,5 +11,14 @@
     
     <div class="box"></div>
 
+<script>
+    
+    const elBox = document.querySelector('.box');
+    elBox.addEventListener('click', function(){
+        console.log(this)
+        this.classList.toggle('on');
+    });
+
+</script>    
 </body>
 </html>

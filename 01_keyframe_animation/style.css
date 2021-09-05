@@ -1,5 +1,6 @@
 .box {width:100px;height:100px;background:#4b274e;border-radius:10px;}
-.box:hover {animation:my-animation 2s infinite alternate;}
+/* .box:hover {animation:my-animation 2s infinite alternate;} */
+.box.on {animation:my-animation 2s infinite alternate;}
 
 @keyframes my-animation {
     0%   {width:100px;background:tomato;}
