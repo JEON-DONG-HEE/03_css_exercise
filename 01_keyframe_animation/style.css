@@ -1,11 +1,19 @@
-.box {width:200px;height:120px;background:#4b274e;}
-.box:hover {animation:box_ani_01 2s infinite alternate;}
+.box {width:100px;height:100px;background:#4b274e;border-radius:10px;}
+.box:hover {animation:my-animation 2s infinite alternate;}
 
-@keyframes box_ani_01 {
-    0% {
-        width:200px;
-    }
-    100% {
-        width:400px;
-    }
+@keyframes my-animation {
+    0%   {width:100px;background:tomato;}
+    75%  {width:500px;background:dodgerblue;}
+    100% {width:300px;background:yellowgreen;}
 }
+
+/* 
+이 경우에 애니메이션 플로우는 다음과 같다
+0%  ->  75%  ->  100%  ->  75%  -> 0%
+100px  ->  500px  ->  300px  -> 500px  -> 100px 
+*/
+
+
+
+
+
