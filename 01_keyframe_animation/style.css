@@ -1,18 +1,18 @@
-.box {width:100px;height:100px;background:#4b274e;border-radius:10px;}
-/* .box:hover {animation:my-animation 2s infinite alternate;} */
-.box.on {animation:my-animation 2s infinite alternate;}
+.box {display:flex;justify-content:center;align-items:center;width:150px;height:100px;margin:10px;font-size:24px;font-weight:bold;color:#fff;border-radius:10px;}
 
-@keyframes my-animation {
-    0%   {width:100px;background:tomato;}
-    75%  {width:500px;background:dodgerblue;}
-    100% {width:300px;background:yellowgreen;}
+.box1 {background:tomato;}
+.box2 {background:dodgerblue;}
+.box3 {background:yellowgreen;}
+
+.box1:hover {animation:size-up 1s infinite alternate linear 0s;}
+.box2:hover {animation:size-up 1s infinite alternate linear 2s;}
+.box3:hover {animation:size-up 1s infinite alternate linear -1s;}
+
+@keyframes size-up {
+    0%   {width:150px;}
+    100% {width:500px;}
 }
 
-/* 
-이 경우에 애니메이션 플로우는 다음과 같다
-0%  ->  75%  ->  100%  ->  75%  -> 0%
-100px  ->  500px  ->  300px  -> 500px  -> 100px 
-*/
 
 
 
