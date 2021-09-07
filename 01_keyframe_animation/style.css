@@ -1,6 +1,6 @@
 .box {display:flex;justify-content:center;align-items:center;width:150px;height:100px;margin:10px;font-size:24px;font-weight:bold;color:#fff;border-radius:10px;}
 
-.box1 {background:tomato;animation:movemove 2s;animation-timing-function:linear;animation-iteration-count:2;animation-direction:alternate-reverse;}
+.box1 {background:tomato;animation:movemove 2s;animation-timing-function:linear;animation-iteration-count:2;animation-direction:alternate;}
 
 @keyframes movemove {
     0%   {transform:translate(0, 0);}
