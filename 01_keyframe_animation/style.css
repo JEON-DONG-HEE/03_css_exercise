@@ -1,17 +1,15 @@
 .box {display:flex;justify-content:center;align-items:center;width:150px;height:100px;margin:10px;font-size:24px;font-weight:bold;color:#fff;border-radius:10px;}
 
-.box1 {background:tomato;}
-.box2 {background:dodgerblue;}
-.box3 {background:yellowgreen;}
+.box1 {background:tomato;animation:movemove 2s;animation-timing-function:linear;animation-iteration-count:2;animation-direction:alternate-reverse;}
 
-.box1:hover {animation:size-up 1s infinite alternate linear 0s;}
-.box2:hover {animation:size-up 1s infinite alternate linear 2s;}
-.box3:hover {animation:size-up 1s infinite alternate linear -1s;}
-
-@keyframes size-up {
-    0%   {width:150px;}
-    100% {width:500px;}
+@keyframes movemove {
+    0%   {transform:translate(0, 0);}
+    25%  {transform:translate(100px, 0);}
+    50%  {transform:translate(100px, 100px);}
+    75%  {transform:translate(0, 100px);}
+    100% {transform:translate(0, 0);}
 }
+
 
 
 
